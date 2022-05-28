@@ -1,5 +1,7 @@
 .App {
+ 
   text-align: center;
+  
 }
 .animate__animated{
   
@@ -24,16 +26,44 @@ width: 80px;
 
 }
 .img-card{
-width: 200px;
-height: 300px;
+  background-color:white;
+  border-radius:5px;
+  width: 262px;
+  height: 270px;
+}
+.img-card img{
+  width: 200px;
+  height: 200px;
+  margin-top: -57px;
 }
 .card{
+  background-color:red;
   box-shadow: -1px 1px 9px -5px rgba(0,0,0,0.57);
-  margin: 10px;
+  margin: 30px 20px;
   display: flex;
   align-items: center;
   width: 300px;
-  height: 450px;
+  height: 475px;
+}
+.sub-card{
+margin-top: 75px;
+}
+.item-card{
+display: grid;
+grid-template-columns:1fr  1fr;
+justify-items: stretch;
+margin-left: 35px;
+margin-top: 37px;
+}
+.skill{
+  margin: 20px 0;
+  
+}
+.item-card p{
+color: white;
+width: max-content;
+border-radius: 5px;
+
 }
 .container{
  
@@ -43,18 +73,21 @@ height: 300px;
  justify-content: space-evenly;
  margin: 50px;
 }
+.name-poke:first-letter {
+  text-transform: uppercase;
+}
 .title{
+  
   color:white;
   border-radius: 4px 4px 0 0;
   width: 300px;
-  height: 150px;
-  background-color: rgba(255, 71, 71, 0.993);
+  height: 100px;
+  
 }
 .skills{
-  border-radius: 0 0 4px 4px;
   width: 300px;
-  height: 150px;
-  background-color: rgba(17, 102, 38, 0.692);
+  height:50px;
+  background-color: rgb(0, 0, 0);
 }
 .input-select, .input-search{
   margin: auto;
@@ -67,4 +100,30 @@ height: 300px;
 .poke-sphere{
 
   width: 50px;
+}
+.button button{
+margin:10px;
+width: 70px;
+}
+.img-detail{
+  display: flex;
+  margin: auto;
+  background-color:white;
+  border-radius: 10px;
+  width:450px;
+}
+.img-detail img{
+   display: flex;
+   margin:auto;
+}
+.container-detail{
+  text-transform: uppercase;
+  box-shadow: 1px 8px 31px -9px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin:60px auto;
+  background-color:green;
+  width: 500px;
 }

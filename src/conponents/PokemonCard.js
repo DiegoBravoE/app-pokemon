@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import{useState,useEffect} from 'react'
-
+import {useNavigate } from 'react-router-dom'
 const PokemonCard = ({characterUrl}) => {
     const [character,setCharacter]=useState({})
 
@@ -11,23 +11,27 @@ const PokemonCard = ({characterUrl}) => {
       .then(res=>setCharacter(res.data))
     },[])
 
-   
+   const navigate=useNavigate()
 
-    console.log(character)
+    
     return (
-        <div className="card">
+        <div className="card" onClick={()=>navigate(`/Pokemons/${character.id}`)}>
             <div className="title">
-            <h1>Name: {character.name} </h1>
-            
+                <h2 className="name-poke"> {character.name} </h2>
             </div>
-             <div >
-            <img className="img-card" src={character.sprites?.other.dream_world.front_default}alt="" />
+             <div className="img-card" >
+                 <img  src={character.sprites?.other.dream_world.front_default}alt="" />
+             <div className="sub-card">
+               <h4  className="skill"  >   Skills:{character.abilities?.[0].ability.name}  </h4>
+                    <div className="item-card">
+                        <p>Type: {character.types?.[0].type.name}</p>
+                        <p>Hp: {character.stats?.[0].base_stat}</p>
+                        <p> Attack: {character.stats?.[1].base_stat}  </p>
+                        <p>Speed: {character.stats?.[5].base_stat}</p>
 
+                    </div>
+             </div> 
              </div>
-            <div className="skills">
-              
-            <h2>   Skills:{character.abilities?.[0].ability.name}  </h2>
-            </div>
             
         </div>
     );
