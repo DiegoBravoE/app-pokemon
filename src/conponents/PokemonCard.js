@@ -11,7 +11,7 @@ const PokemonCard = ({characterUrl}) => {
     useEffect(()=>{
       axios.get(characterUrl)
       .then(res=>setCharacter(res.data))
-    },[])
+    })
 
    const navigate=useNavigate()
 
