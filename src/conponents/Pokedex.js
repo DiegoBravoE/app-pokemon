@@ -68,7 +68,7 @@ const Pokedex = () => {
          </div>
          <div className="input-search">
                 <div  className="d-flex" role="search">
-                    <input  onChange={e=>setPokeSearch(e.target.value)} value={pokeSearch} className="form-control me-2" type="search" placeholder="Search Pokemon" aria-label="Search"/>
+                    <input  onChange={e=>setPokeSearch(e.target.value)} value={pokeSearch}key={pokemons.pokemon} className="form-control me-2" type="search" placeholder="Search Pokemon" aria-label="Search"/>
                     <button  onClick={search} className="btn btn-outline-success" type="submit">Search</button>
                 </div>
 
