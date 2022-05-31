@@ -147,8 +147,17 @@ width: max-content;
   background-color:rgb(124, 190, 133);
 
 }
-@media (max-width: 376px) {
+@media (max-width: 600px) {
 .banner{
-  width: 300px;
+  width: 250px;
 }
+.container{
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  justify-content: space-evenly;
+  margin: auto;
+ }
+ .pagination{
+   display:none;
+ }
 }

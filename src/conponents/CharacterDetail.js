@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import{useState,useEffect} from 'react'
 import axios from "axios";
-
+import banner from '../img/pokemon.svg'
 const CharacterDetail = () => {
   const {id}=useParams()
 
@@ -15,10 +15,10 @@ const CharacterDetail = () => {
    },[id])
    
   return (
-   
-     
-       
-        <div   className="img-detail">
+   <div>
+     <img className="banner" src={banner} alt="" />
+
+       <div   className="img-detail">
              <img  src={pokemon.sprites?.other.dream_world.front_default}alt="" />
         <h1 className="title-detail">{pokemon.name}</h1>
         <div className="sub-card-detail">
@@ -37,6 +37,8 @@ const CharacterDetail = () => {
              </div>
        
         </div>
+   </div>
+     
 
      
       

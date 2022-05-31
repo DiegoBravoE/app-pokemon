@@ -60,7 +60,7 @@ console.log(numbers)
     
     return (
         <div >
-          <img src={banner} alt="" />
+          <img className="banner" src={banner} alt="" />
 
             <h2  className="name-trainer">Bienvenido {user}</h2>
 
@@ -88,7 +88,10 @@ console.log(numbers)
                {
 
                numbers.map(number=>(
-                <button  onClick={()=>setPage(number)}className="btn btn-outline-primary" >{number}</button>
+                   <div className="pagination">
+
+                       <button  onClick={()=>setPage(number)}className="btn btn-outline-primary" >{number}</button>
+                   </div>
 
                ))
                }
