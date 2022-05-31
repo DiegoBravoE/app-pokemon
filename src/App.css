@@ -147,9 +147,6 @@ width: max-content;
   background-color:rgb(124, 190, 133);
 
 }
-@media (max-width: 350px) {
-body{
-  background-color:red;
+@media (max-width: 376px) {
 
-}
 }
