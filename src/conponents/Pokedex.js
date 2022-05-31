@@ -33,10 +33,13 @@ const Pokedex = () => {
 
    const numbers=[]
     for(let i=1; i <= lastPage; i++){
-       numbers.push(i)
+       
+
+            numbers.push(i)
+        
 
     }
-
+console.log(numbers)
     const search = () => {
         
         navigate(`/Pokemons/${pokeSearch}`)
@@ -44,9 +47,14 @@ const Pokedex = () => {
     }
     
     const filterCharacters=(e)=>{
-        
-        axios.get(e.target.value)
-        .then((res) => setPokemons(res.data.pokemon));
+        if(e.target.value ==="All Types"){
+            axios.get(`https://pokeapi.co/api/v2/pokemon?limit=1126&offset=0`)
+            .then(res=>setPokemons(res.data.results))
+        }else{
+            axios.get(e.target.value)
+            .then((res) => setPokemons(res.data.pokemon));
+
+        }
     }
   
     

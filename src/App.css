@@ -3,12 +3,14 @@
 text-align: center;
   font-family:Roboto;
 }
+
 .animate__animated{
   
  height:200px;
 }
 .animate__backInRight{
   height: 300px;
+;
 }
 
 .img-footer img{
@@ -144,4 +146,10 @@ width: max-content;
   text-transform: uppercase;
   background-color:rgb(124, 190, 133);
 
+}
+@media (max-width: 350px) {
+body{
+  background-color:red;
+
+}
 }

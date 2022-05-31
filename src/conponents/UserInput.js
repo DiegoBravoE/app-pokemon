@@ -16,6 +16,8 @@ const getName=()=>{
     return (
         <div>
            <img src={banner} alt="" />
+           <div className=".container">
+
            <h1><strong>Hello Trainer!!!!</strong></h1>
           <img className=" animate__animated  animate__backInRight" src="https://zarude.pokemon.com/assets/images/characters/ash.png" alt="" />
             <div  className="input-container">
@@ -26,6 +28,8 @@ const getName=()=>{
 
                     </form>
             </div>
+
+           </div>
         </div>
     );
 };
