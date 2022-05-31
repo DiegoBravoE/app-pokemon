@@ -15,7 +15,7 @@ const getName=()=>{
 }
     return (
         <div>
-           <img src={banner} alt="" />
+           <img className="banner" src={banner} alt="" />
            <div className="contenedor">
 
            <h1><strong>Hello Trainer!!!!</strong></h1>

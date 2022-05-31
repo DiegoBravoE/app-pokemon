@@ -148,5 +148,7 @@ width: max-content;
 
 }
 @media (max-width: 376px) {
-
+.banner{
+  width: 300px;
+}
 }
