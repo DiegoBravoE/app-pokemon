@@ -3,7 +3,79 @@
 text-align: center;
   font-family:Roboto;
 }
-
+.esfera{
+  position:absolute;
+  margin-left: 70%;
+  margin-top: -79px;
+}
+.elipse{
+  position: relative;
+  margin-left:-90px;
+  margin-top: 7px
+}
+.red{
+  background-color:red;
+  height: 80px;
+}
+.black{
+  background-color:black;
+  height: 40px;
+}
+.hello-trainer{
+  color:tomato;
+}
+.bug{
+  background-color:#aedf78;
+}
+.water{
+  background-color:#a5e6fd;
+}
+.dragon{
+  background-color:#778DB8;
+}
+.grass{
+  background-color:#00ca91;
+}
+.fire{
+  background-color:#e95c4d;
+}
+.normal{
+  background-color:#a5a5a5;
+}
+.poison{
+  background-color:#93bff8;
+}
+.ice{
+  background-color:#c9e8f5c0;
+}
+.dark{
+  background-color:#1A657E;
+}
+.fairy{
+  background-color:#F7C6BD;
+}
+.electric
+{
+  background-color:#fde4018f;
+}
+.psychic{
+  background-color:#d7a500d3
+}
+.fighting{
+  background-color:#B0D3DA;
+}
+.ground{
+  background-color:#CF7100;
+}
+.ghost{
+  background-color:#764497a1;
+}
+.steel{
+  background-color:#b4b4b2;
+}
+.rock{
+  background-color:#C4BFD7;
+}
 .animate__animated{
   
  height:200px;
@@ -13,10 +85,9 @@ text-align: center;
 ;
 }
 
-.img-footer img{
-  margin-bottom: -39px; 
-width: 80px;
-
+.banner{
+  width: 350px;
+ margin-right: 650px;
 }
 .img-card{
   
@@ -28,22 +99,78 @@ width: 80px;
 .img-card img{
   width: 200px;
   height: 200px;
-  
+  margin-top: -92px;
 }
 .card{
-  background-color:red;
+ 
   box-shadow: -1px 1px 9px -5px rgba(0,0,0,0.57);
-  margin: 30px 20px;
+  margin: 80px 20px;
   display: flex;
   align-items: center;
-  width: 300px;
-  height: 475px;
+  width: 245px;
+  height: 389px;
+}
+.img-card-detail img{
+  margin-top: -135px;
+  margin-right: 200px;
+}
+.img-card-detail {
+ 
+  width: 500px;
+  height: 650px;
+ 
+}
+.detail-item{
+  display :flex;
+}
+.card-detail{
+  border-radius:30px;
+  box-shadow: -1px 1px 9px -5px rgba(0,0,0,0.57);
+  margin: 110px auto;
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 750px;
+}
+ .moves h5{
+
+margin: 25px 10px;
+}
+.moves-detail{
+  border-radius:10px;
+  background-color: #fff;
+  height: 450px;
+  width: 490px;
+  margin-left: 293px;
+  margin-bottom: -328px;
+}
+.hp,.attack,.defense,.special-attack,.special-defense,.speed
+{
+  display: flex;
+  flex-direction: column;
+}
+ progress{
+   border-radius:5px;
+   margin:0 auto;
+   width: 300px;
+}
+.container-item-detail.first-letter{
+  text-transform: uppercase;
+}
+.container-item-detail{
+  
+  background-color: white;
+  margin-left: 35px;
+  height: 324px;
+  width: 230px;
+  padding-top: 105px;
+  border-radius: 10px;
 }
 .container-item{
   
   background-color: white;
-  margin-top: -85px;
-  height: 324px;
+  margin-top: -45px;
+  height: 300px;
   width: 230px;
   padding-top: 105px;
   border-radius: 10px;
@@ -52,19 +179,22 @@ width: 80px;
  
 margin-top: -40px;
 }
-
+.sub-card-item{
+ 
+  margin-top: -110px;
+  }
 .item-card{
 display: grid;
 grid-template-columns:1fr  1fr;
 justify-items: stretch;
-margin-left: 35px;
-margin-top: 37px;
+margin-left: 17px;
+margin-top: 30px;
 }
 
 .item-card p{
 color: rgb(20, 19, 19);
 width: max-content;
-border-radius: 5px;
+margin-top: 10px;
 
 }
 .container{
@@ -83,7 +213,7 @@ border-radius: 5px;
   
   color:rgb(5, 5, 5);
   border-radius: 4px 4px 0 0;
-  margin-top:30px;
+  margin-top:50px;
   
 }
 .skills{
@@ -112,41 +242,9 @@ justify-content: space-evenly;
  margin: 20px 2px;
 width: max-content;
 }
-.sub-card-detail{
-  color: rgb(14, 13, 13);
-  margin-top: 50px;
- }
- .item-card-detail{
-   background-color:gray;
- display: grid;
- grid-template-columns:1fr  1fr 1fr 1fr ;
- justify-items: stretch;
- margin-top: 37px;
- }
- 
-.img-detail{
-  background-color: rgb(19, 150, 26);
-  margin: 10px auto;
-  border-radius: 10px;
-  width:450px;
-  height: 460px;
-}
 
-.img-detail img{
-  border-radius: 10px;
-  background: white;
-  margin-top: 76px;
-  width: 350px;
-  height: 250px;
- 
-}
 
-.container-detail{
-  height: 100%;
-  text-transform: uppercase;
-  background-color:rgb(124, 190, 133);
 
-}
 @media (max-width: 600px) {
 .banner{
   width: 250px;
