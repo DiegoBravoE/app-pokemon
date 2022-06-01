@@ -19,11 +19,8 @@ const UserInput = () => {
         <h1 className="hello-trainer">
           <strong>Hello Trainer!!!!</strong>
         </h1>
-        <img
-          className=" animate__animated  animate__backInRight"
-          src="https://zarude.pokemon.com/assets/images/characters/ash.png"
-          alt=""
-        />
+        <img className="imagen-gif" src="https://i.gifer.com/KG12.gif" alt="" />
+       
         <div className="input-container">
           <form>
             <input
